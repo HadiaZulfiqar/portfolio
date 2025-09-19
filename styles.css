@@ -1,0 +1,204 @@
+.small_container {
+  max-width: 1000px;
+  /* keeps it neat */
+  margin: 10px auto;
+  /* centers whole section */
+  padding: 10px;
+  border: 1px solid #ddd;
+  /* optional border */
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+}
+
+
+/* side-by-side layout */
+.side_by_side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* equal halves */
+  align-items: center;
+  /* vertical center */
+  gap: 40px;
+  /* space between text and image */
+}
+
+/* image responsive */
+.side_by_side img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FA;
+  color: #361f5a;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+.about_me {
+
+  /* moves it down inside hero */
+  /* transform: translate(-50%, -50%); */
+  max-width: 1200px;
+  /* position:relative;  */
+  overflow: hidden;
+  text-align: center;
+  background-color: #F8F9FA;
+  padding: 20px;
+  /* margin: 50px; */
+}
+
+
+
+.edu_exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin: 100px auto 0 auto;
+  gap: 10px;
+}
+
+.main_container {
+  max-width: 1200px;
+  /* keeps it neat */
+  margin: 10px auto 20px auto;
+  /* centers whole section */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* optional border */
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main_container_about_me {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+  border: 1px solid #ddd;
+  /* optional border */
+  border-radius: 10px;
+  background: #fff;
+  margin: 10px auto;
+}
+
+
+.dawlance_app {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  /* grid-template-columns: auto auto auto; */
+  gap: 10px;
+  padding: 10px;
+}
+
+.appvideo_2 iframe,
+.appvideo_3 iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  /* ensures video fills, cropping if needed */
+  display: block;
+  /* removes any extra inline gap */
+}
+
+
+.appvideo_2 {
+  grid-row: 1 / 3;
+  /* spans 2 rows */
+  grid-column: 1 / 2;
+}
+
+.text_1 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 4;
+}
+
+.appvideo_3 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+}
+
+.hardware_5 {
+  grid-column: 2 / 4;
+}
+
+.hardware_5 img,
+.error_4 img {
+  height: 300px;
+  width: 100%;
+  /* width: 400px; */
+
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  /* vertical centering */
+  justify-content: center;
+  gap: 20px;
+  background-color: #F8F9FA;
+}
+
+.simpleicons{
+  height: 25px;
+  width: 25px;
+}
+
+
+.skills{
+  display: flex;
+  /* gap: 30px; */
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.additech-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* two columns: video | carousel */
+  grid-auto-rows: auto;           /* row height adjusts automatically */
+  gap: 20px;
+  margin: auto;
+  padding: 20px 50px;
+  align-items: center;            /* vertical alignment */
+}
+
+.additech-images iframe,
+.additech-images .carousel {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  position: fixed;     /* keep it always visible */
+  bottom: 20px;        /* distance from bottom */
+  right: 20px;         /* distance from right */
+  z-index: 1000;       /* stay above other content */
+}
+
+footer a {
+  background-color: #007bff; /* bootstrap blue */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+footer a:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
